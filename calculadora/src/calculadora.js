@@ -1,4 +1,4 @@
-import { use, useState } from 'react';
+import { React, use, useState } from 'react';
 import './calculadora.css';
 import { Jumbotron, Container, Row, Col, Button, Form } from 'react-bootstrap';
 import CalculadoraService from "./calculadora.service";
@@ -75,7 +75,8 @@ function Calculadora() {
             name="txtNumeros"
             className="text-right"
             readOnly="readonly"
-            value={txtNumeros}/>
+            value={txtNumeros}
+            data-testid="txtNumeros"/>
           </Col>
         </Row>
 
